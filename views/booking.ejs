@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePen - React date range picker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+    />
+    <link rel="stylesheet" href="../css/booking_style.css" />
+    <script
+      src="https://kit.fontawesome.com/f1f29270e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/all.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <h1><a href="./">FURRURU 呼嚕嚕</a></h1>
+        <ul class="menu">
+          <li><a href="./booking">快速媒合</a></li>
+          <li><a href="./schedule">寶貝動態</a></li>
+          <li><a href="./cam">即時影像</a></li>
+          <li><a href="./about">關於呼嚕</a></li>
+          <li><a href="#">帳戶</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <div class="title">
+          <p class="FURRURU_title">選擇服務日期</p>
+        </div>
+
+        <div id="calendar"></div>
+        <ul class="choose_page">
+          <li><a href="./">回首頁</a></li>
+          <li><a href="./caretakers">下一步</a></li>
+        </ul>
+        <style>
+          .choose_page {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 50px;
+          }
+          .choose_page a {
+            padding: 20px 30px;
+            background-color: #ff7e42;
+            display: block;
+            font-size: 30px;
+            color: aliceblue;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          .choose_page a:hover {
+            background-color: #ffe042;
+            color: gray;
+          }
+          @media (max-width: 576px) {
+            .choose_page a {
+              font-size: 22px;
+              padding: 15px 20px;
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="../js/booking-script.js"></script>
+  </body>
+</html>

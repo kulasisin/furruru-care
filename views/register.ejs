@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+    />
+    <link rel="stylesheet" href="../css/booking_style.css" />
+    <script
+      src="https://kit.fontawesome.com/f1f29270e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/all.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <h1><a href="./">FURRURU 呼嚕嚕</a></h1>
+        <ul class="menu">
+          <li><a href="./booking">快速媒合</a></li>
+          <li><a href="./schedule">寶貝動態</a></li>
+          <li><a href="./cam">即時影像</a></li>
+          <li><a href="./about">關於呼嚕</a></li>
+          <li><a href="#">帳戶</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <div class="title">
+          <p class="FURRURU_title">歡迎加入呼嚕嚕</p>
+        </div>
+        <form action="/register" method="POST" class="reg-form">
+          <div>
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">信箱</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <ul class="choose_page">
+            <li><button type="submit">註冊呼嚕</button></li>
+            <li><a href="/login">登入</a></li>
+          </ul>
+        </form>
+
+        <style>
+          .banner {
+            height: 100vh;
+          }
+          .reg-form {
+            margin: 30px auto;
+          }
+          .reg-form div {
+            padding: 15px 0;
+          }
+        </style>
+
+        <style>
+          .choose_page {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+          }
+          button,
+          .choose_page a {
+            padding: 20px 0px;
+            background-color: #ff7e42;
+            display: block;
+            font-size: 22px;
+            color: aliceblue;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 0;
+            width: 250px;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 20px;
+          }
+          button:hover,
+          .choose_page a:hover {
+            background-color: #ffe042;
+            color: gray;
+            cursor: pointer;
+          }
+          @media (max-width: 576px) {
+            .choose_page a {
+              font-size: 22px;
+              padding: 15px 20px;
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <!-- <script src="../js/booking-script.js"></script> -->
+  </body>
+</html>
